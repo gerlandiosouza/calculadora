@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-itens: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-itens: center;
+  background-color: #3b3b3b;
+  width: 400px;
+  height: 600px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+#display {
+  display: flex;
+  height: 90px;
+  width: 350px;
+  background: #61c961;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  align-content: flex-start;
+  position: relative;
+}
+
+#displayNumber {
+  display: flex;
+  margin-top: 30px;
+  font-family: arial;
+  font-style: italic;
+  font-size: 50px;
+  position: absolute; /* Posicionamento em relação à div */
+  bottom: 0; /* Alinha na parte inferior */
+  right: 4px; /* Alinha na parte direita */
+}
+
+#operations {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+  height: 50px;
+  width: 350px;
+  background: #3b3b3b;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.operation {
+  background-color: #d94c51;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 40px;
+}
+
+.operation:hover {
+  background-color: #fffefe;
+}
+
+#numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 10px;
+  height: 300px;
+  width: 350px;
+  background: #3b3b3b;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.number, button {
+  background-color: #c6d2c6;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 30px;
+  border: none;
+}
+
+button {
+   width:100%;
+   height:100%;
+}
+
+
+button:active {
+   background-color: #fffefe;
+ }
