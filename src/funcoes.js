@@ -1,30 +1,22 @@
-
-//relacting elements in html tree
-
-const displayNumber = document.getElementById('displayNumber'); 
-
-const add = document.getElementById ('sum');
-const sub = document.getElementById ('sbtract');
-const mult = document.getElementById ('multiply');
-const div = document.getElementById ('divide');
-const equal = document.getElementById('equal');
-
-const numbValues = document.querySelectorAll('.numberValue');
-const selectOp = document.querySelectorAll('.op');
-
-//arrays of received numbers
-let receivedsNumbers = [];
-
-let arrayDisplay =[];
-
+import {
+    displayNumber,
+    numbValues,
+    selectOp
+    
+} from './script.js'
 
 //global variables
 
-let numberToOperation=0;
-let getOp="";
-let operInProgress = "";
-let inProgressToequal = "";
-let afterEqual = false;
+export let numberToOperation=0;
+export let getOp="";
+export let operInProgress = "";
+export let inProgressToequal = "";
+export let afterEqual = false;
+
+//arrays of received numbers
+let receivedsNumbers = [];
+let arrayDisplay =[];
+
 
 //operations functions
 
@@ -247,7 +239,7 @@ const equalFunc = () => {
            
             break;
     }
-   // operInProgress = "";
+   
 };
                    
 
